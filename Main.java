@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
   public static void main(String[] args) {
     B Obj1 = new B(); // showing error if make method static
-    Obj1.meth();
+    System.out.peintln(Obj1.meth());
     return;
 
   }
