@@ -1,5 +1,5 @@
 package com.driver;
-import java.util.*;
+
 public class Main {
   public static void main(String[] args) {
     B Obj1 = new B(); // showing error if make method static
@@ -7,15 +7,16 @@ public class Main {
     return;
 
   }
-  public  static class A{
-    public static String meth(){
+  public static class A{
+    public String meth(){
       return "Invoking method from class A";
     }
 
   }
 
   public static class B extends A{
-    public static String meth(){
+    @Override
+    public String meth(){
       return "Method is overridden in Extendend class B";
     }
   }
